@@ -8,12 +8,12 @@
 
 # congiure git
 
-'''python
+''' python
 git config --global user.name your name
 git config --global user.email your_email@youremail.com
 
 git config --global user.name navicester
 git config --global user.email navicester@qq.com
-'''python
+''' 
 
 # modify, commit, push
