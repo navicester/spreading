@@ -3,3 +3,17 @@
 [http://maxiang.info/](http://maxiang.info/)  
 
 # New repository
+
+# Install client msysgit
+
+# congiure git
+
+'''python
+git config --global user.name your name
+git config --global user.email your_email@youremail.com
+
+git config --global user.name navicester
+git config --global user.email navicester@qq.com
+'''python
+
+# modify, commit, push
