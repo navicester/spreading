@@ -1,3 +1,4 @@
 #.gitignore
 lwc.sublime-project
 lwc.sublime-workspace
+*.pyc
