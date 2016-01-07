@@ -21,6 +21,9 @@ DATABASES = {
     }
 }
 
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = []
@@ -111,6 +114,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(BASE_DIR,"templates")
 )
 
 INSTALLED_APPS = (
