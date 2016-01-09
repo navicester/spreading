@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     url(r'^home$', 'lwc.views.home', name='home'),
     # url(r'^lwc/', include('lwc.foo.urls')),
 
+    url(r'^$', 'joins.views.home', name='home'),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
