@@ -7,13 +7,17 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^home$', 'lwc.views.home', name='home'),
-    # url(r'^lwc/', include('lwc.foo.urls')),
-
     url(r'^$', 'joins.views.home', name='home'),
 
+    # url(r'^lwc/', include('lwc.foo.urls')),
+    
+
+    
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    url(r'^(?P<ref_id>.*)$', 'joins.views.share', name='share'),
 )

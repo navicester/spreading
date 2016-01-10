@@ -78,6 +78,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static','static_dirs'),
 )
 
+SHARE_URL = "http://127.0.0.1:8000/?ref="
+
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
@@ -104,6 +106,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'lwc.middleware.ReferMiddleware',
 )
 
 ROOT_URLCONF = 'lwc.urls'
@@ -118,7 +121,7 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,"templates")
 )
 
-print TEMPLATE_DIRS
+# print TEMPLATE_DIRS
 
 INSTALLED_APPS = (
     'lwc',
